@@ -137,6 +137,11 @@ metadata:
   namespace: kube-system
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      component: poseidon
+      tier: control-plane
+      poseidonservice: poseidon
   template:
     metadata:
       labels:
