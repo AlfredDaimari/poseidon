@@ -20,6 +20,9 @@ metadata:
     scheduler: firmament
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      scheduler: firmament
   template:
     metadata:
       labels:
